@@ -1,0 +1,143 @@
+Software: Knight's Tour
+Author: Hy Truong Son
+Major: BSc. Computer Science
+Class: 2013 - 2016
+Institution: Eotvos Lorand University
+Email: sonpascal93@gmail.com
+Website: http://people.inf.elte.hu/hytruongson/
+Copyright 2015 (c) Hy Truong Son. All rights reserved.
+
+About
+-----
+* Solved by Neural Network
+* Solved by Back-Tracking and Warnsdorf's rule (heuristics)
+
+Usage
+-----
+* Compile:
+$ g++ Knight_Tour_Neural_Network.cpp -o Knight_Tour_Neural_Network
+$ g++ Knight.cpp -o Knight
+$ javac ChessBoard.java
+
+
+***************************************
+*** Neural Network to find a circle ***
+***************************************
+
+$ ./Knight_Tour_Neural_Network 
+The size of chessboard: 6
+
+Time 1:
+Local Optimization.
+
+Time 2:
+Local Optimization.
+
+Time 3:
+Local Optimization.
+
+Time 4:
+Local Optimization.
+
+Time 5:
+Local Optimization.
+
+Time 6:
+Local Optimization.
+
+Time 7:
+Local Optimization.
+
+Time 8:
+Local Optimization.
+All original cell have degree 2.
+Number of connected components: 2
+
+Time 9:
+Local Optimization.
+All original cell have degree 2.
+Number of connected components: 5
+
+Time 10:
+Local Optimization.
+All original cell have degree 2.
+Number of connected components: 4
+
+Time 11:
+Local Optimization.
+All original cell have degree 2.
+Number of connected components: 4
+
+Time 12:
+Local Optimization.
+All original cell have degree 2.
+Number of connected components: 3
+
+Time 13:
+Local Optimization.
+All original cell have degree 2.
+Number of connected components: 4
+
+Time 14:
+Local Optimization.
+All original cell have degree 2.
+Number of connected components: 4
+
+Time 15:
+Local Optimization.
+All original cell have degree 2.
+Number of connected components: 3
+
+Time 16:
+Local Optimization.
+All original cell have degree 2.
+Number of connected components: 6
+
+Time 17:
+Local Optimization.
+All original cell have degree 2.
+Number of connected components: 4
+
+Time 18:
+Local Optimization.
+All original cell have degree 2.
+Number of connected components: 1
+
+Solution is found!
+
+
+***********************************************************************
+*** Back-Tracking to find a route (very fast with Warnsdorf's rule) ***
+***********************************************************************
+
+Run:
+$ ./Knight
+N = 20
+Route or Circle: r
+Solution:
+1 40 201 210 3 42 197 214 5 44 193 144 7 46 149 142 9 48 51 138
+202 209 2 41 212 259 4 43 196 215 6 45 192 143 8 47 150 139 10 49
+39 200 211 260 337 198 213 256 221 194 223 216 145 152 189 148 141 50 137 52
+208 203 336 199 258 263 340 195 240 247 220 191 224 217 146 151 154 123 140 11
+335 38 261 338 349 342 257 264 255 222 239 242 219 190 153 188 147 136 53 122
+204 207 334 343 262 339 348 341 246 241 248 225 238 227 218 157 124 155 12 127
+37 344 205 350 347 378 271 254 265 274 245 236 243 158 187 160 135 126 121 54
+206 333 346 399 376 351 380 367 272 253 266 249 226 237 228 125 156 97 128 13
+345 36 375 352 379 394 377 270 275 296 273 244 235 186 159 134 161 120 55 96
+332 353 400 389 398 381 368 383 366 269 252 267 250 229 184 171 98 129 14 101
+35 388 355 374 393 384 395 278 297 276 295 234 185 172 133 162 119 100 95 56
+354 331 392 397 390 369 382 365 294 279 268 251 230 183 170 99 130 85 102 15
+387 34 373 356 385 396 293 314 277 298 233 280 173 132 163 118 107 94 57 84
+330 357 386 391 370 315 364 305 292 285 180 231 182 169 108 131 86 103 16 89
+33 372 317 358 363 306 313 286 299 232 281 174 115 164 117 106 93 88 83 58
+318 329 362 371 316 323 304 291 284 179 166 181 168 109 92 87 104 69 90 17
+361 32 325 322 359 312 307 300 287 282 175 114 165 116 105 70 91 82 59 68
+328 319 360 311 324 303 290 283 178 113 78 167 110 75 64 81 66 71 18 21
+31 310 321 326 29 308 301 288 27 176 111 76 25 80 73 62 23 20 67 60
+320 327 30 309 302 289 28 177 112 77 26 79 74 63 24 65 72 61 22 19
+
+The solution will be saved in Solution.txt file.
+
+Visualization in Java (input text file is Solution.txt, output image file Solution.png):
+$ java ChessBoard
+
